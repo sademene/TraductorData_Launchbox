@@ -21,7 +21,7 @@ Todo corre directamente en tu PC.
 
 La aplicación traduce el nodo:
 
-<Notes>
+"<Notes>"
 
 De los XML de metadata de LaunchBox y los entrega respetando el resto de datos y estructura del XML.
 
