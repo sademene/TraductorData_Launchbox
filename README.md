@@ -21,7 +21,7 @@ Todo corre directamente en tu PC.
 
 La aplicación traduce el nodo:
 
-Notes
+`<Notes>`  
 
 De los XML de metadata de LaunchBox y los entrega respetando el resto de datos y estructura del XML.
 
@@ -51,13 +51,13 @@ Todo optimizado para grandes bibliotecas.
 
 # ⚡ Características
 
-✅ Traducción masiva
-✅ Funciona completamente offline
-✅ Usa IA real local
-✅ Mantiene formato XML
-✅ Cache inteligente muy rapido
-✅ Perfiles LOW / BALANCED / HIGH
-✅ Diseñada específicamente para LaunchBox
+✅ Traducción masiva  
+✅ Funciona completamente offline  
+✅ Usa IA real local  
+✅ Mantiene formato XML  
+✅ Cache inteligente muy rapido  
+✅ Perfiles LOW / BALANCED / HIGH  
+✅ Diseñada específicamente para LaunchBox  
 
 ---
 
@@ -218,20 +218,20 @@ Ahora LaunchBox mostrará las Notes traducidas al español.
 
 La herramienta:
 
-✅ SOLO traduce `<Notes>`
-❌ NO modifica nombres de juegos
-❌ NO altera imágenes
-❌ NO cambia rutas
-❌ NO rompe compatibilidad con LaunchBox
+✅ SOLO traduce `<Notes>`  
+❌ NO modifica nombres de juegos  
+❌ NO altera imágenes  
+❌ NO cambia rutas  
+❌ NO rompe compatibilidad con LaunchBox  
 
 ---
 
 # 💾 TODO ES OFFLINE
 
-✅ No necesita internet
-✅ No consume APIs
-✅ No tiene límites
-✅ No manda datos a servidores
+✅ No necesita internet  
+✅ No consume APIs  
+✅ No tiene límites  
+✅ No manda datos a servidores  
 
 ---
 
