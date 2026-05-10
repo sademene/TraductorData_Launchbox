@@ -97,9 +97,9 @@ Ahí encontrarás muchos archivos XML.
 Ejemplo:
 
 
-Nintendo Entertainment System.xml
-Super Nintendo Entertainment System.xml
-Sega Genesis.xml
+*Nintendo Entertainment System.xml
+*Super Nintendo Entertainment System.xml
+*Sega Genesis.xml
 
 
 ** Si quieres traducir tambien las notas de las plataformas, incluye el archivo 
