@@ -1,162 +1,217 @@
-# TraductorData LaunchBox — Traducción MASIVA de Notas en el Metadata XML usando IA Offline 🚀
+# 🎮 TraductorData LaunchBox
+### Traducción MASIVA de metadata XML de LaunchBox usando IA Offline
 
-Después de muchísimo tiempo buscando una solución real para traducir metadata de LaunchBox… terminé cansándome 😅
+<p align="center">
+  <img src="screenshots/main_ui.png" width="900">
+</p>
 
-Probé diferentes plugins de la comunidad pero honestamente no logre hacer funcionar ninguno. Supongo que el tema de cambio de versiones afecta bastante.
+<!--
+SCREENSHOT REQUERIDO:
+main_ui.png
 
-Así que terminé desarrollando mi propia aplicación pensada para funcionar con cualquier version de LaunchBox
-
-El resultado es:
-
-## 🎮 TraductorData LaunchBox
-
-Una herramienta de escritorio que traduce automáticamente los nodos `<Notes>` de los XML de LaunchBox usando IA local.
-
-No usa Google Translate.
-No usa servicios online.
-No requiere API Keys.
-Todo corre directamente en tu PC.
-
-# ✅ ¿Qué traduce exactamente?
-
-La aplicación traduce el nodo:
-
-`<Notes>`  
-
-De los XML de metadata de LaunchBox y los entrega respetando el resto de datos y estructura del XML.
-
-Ideal para:
-
-* Descripciones
-* Historia de juegos
-* Información técnica
-* Metadata importada en inglés
+Captura principal de la aplicación mostrando:
+- Barra de progreso
+- Consola
+- Estadísticas CPU/RAM
+- Botones
+- Perfil seleccionado
+-->
 
 ---
 
-# 🧠 ¿Qué usa internamente?
+# 🚀 ¿Qué es esto?
 
-La app utiliza:
+Después de muchísimo tiempo buscando una solución REAL para traducir metadata de LaunchBox… terminé cansándome.
 
-* HuggingFace Transformers
-* M2M100
-* CTranslate2
-* Traducción IA offline
-* Cache SQLite
-* Correcciones gamer automáticas
+Probé plugins, scripts y herramientas externas, pero honestamente nunca logré encontrar algo estable, rápido y realmente funcional para bibliotecas grandes.
 
-Todo optimizado para grandes bibliotecas.
+Así que terminé desarrollando mi propia herramienta.
+
+## TraductorData LaunchBox
+
+Una aplicación de escritorio que traduce automáticamente los nodos:
+
+```xml
+<Notes>
+```
+
+de los XML de LaunchBox utilizando IA local.
+
+✅ Sin APIs  
+✅ Sin servicios online  
+✅ Sin límites  
+✅ Todo corre directamente en tu PC  
 
 ---
 
 # ⚡ Características
 
-✅ Traducción masiva  
-✅ Funciona completamente offline  
-✅ Usa IA real local  
-✅ Mantiene formato XML  
-✅ Cache inteligente muy rapido  
-✅ Perfiles LOW / BALANCED / HIGH  
-✅ Diseñada específicamente para LaunchBox  
+- Traducción masiva de XML
+- IA completamente offline
+- Compatible con grandes bibliotecas
+- Cache SQLite inteligente
+- Correcciones gamer automáticas
+- Mantiene intacta la estructura XML
+- Perfiles LOW / BALANCED / HIGH
+- Optimizado específicamente para LaunchBox
 
 ---
 
-🚨☢️ AVISOS IMPORTANTES!!!
+# 🧠 Tecnologías utilizadas
 
-** La primera vez que ejecutes la aplicación, tardara un poco en arrancar. Es normal ya que debe generar directorios y validaciones.
-
-** Se recomienda ejecutar como Administrador
-
-** Se recomienda realizar siempre un backup de los archivos originales antes de reemplazarlos. 
-
-** La primera vez realiza una prueba con un solo archivo para hacerte una idea de cuanto tardara en tu pc
-
-*********************************************************************************************************** 
-El tiempo total de traducción depende del rendimiento de tu PC y de la cantidad de textos a traducir, si un texto no se ha traducido nunca entonces tardara un poco mas en realizar el proceso pero la siguiente vez que detecte ese texto la traducción será casi instantánea.
-
-Aproximadamente le toma poco menos de media hora por cada mil juegos de la colección durante LA PRIMERA TRADUCCION
-Traducciones posteriores se hacen desde cache y se procesan en segundos.
-
-************************************************************************************************************
+- Python
+- Transformers
+- M2M100
+- CTranslate2
+- SQLite
+- SentencePiece
+- LXML
+- LangDetect
 
 ---
 
+# 🖼️ Ejemplo de resultado
 
-# 📦 CÓMO USARLO (PASO A PASO)
+## XML Original
 
-## 1. LOCALIZAR LOS XML DE LAUNCHBOX
+<p align="center">
+  <img src="screenshots/xml_before.png" width="900">
+</p>
 
-Ve a tu carpeta de LaunchBox.
+<!--
+SCREENSHOT REQUERIDO:
+xml_before.png
 
-Normalmente está en algo como:
-
-\LaunchBox\Data\Platforms
-
-Ahí encontrarás muchos archivos XML.
-
-Ejemplo:
-
-
-Nintendo Entertainment System.xml  
-Super Nintendo Entertainment System.xml  
-Sega Genesis.xml  
-
-
-** Si quieres traducir tambien las notas de las plataformas, incluye el archivo 
-
-\LaunchBox\Data\Platforms.XML
-
+Mostrar:
+- XML original en inglés
+- Nodo <Notes>
+- Metadata real de LaunchBox
+-->
 
 ---
 
-# ⚠️ 2. HACER RESPALDO
+## XML Traducido
 
-MUY IMPORTANTE.
+<p align="center">
+  <img src="screenshots/xml_after.png" width="900">
+</p>
 
-Antes de usar la herramienta:
+<!--
+SCREENSHOT REQUERIDO:
+xml_after.png
 
-Haz una copia de seguridad de tus XML originales.
-
-Simplemente copia los XML a otra carpeta por seguridad.
-
----
-
-# 📁 3. COPIAR XML A LA CARPETA INPUT
-
-Dentro de la aplicación existe una carpeta llamada:
-
-\input
-
-Copia ahí los XML que deseas traducir.
+Mostrar:
+- El mismo XML ya traducido
+- Nodo <Notes> en español
+- Comparativa clara
+-->
 
 ---
 
-# ▶️ 4. EJECUTAR LA APLICACIÓN
+# 📦 Instalación
 
-Abre:
+## 1. Descargar Release
 
+Ir a:
+
+## Releases
+
+y descargar:
+
+```text
+TraductorData_LaunchBox_v0.16_Portable.zip
+```
+
+---
+
+# ⚠️ IMPORTANTE
+
+La primera vez que ejecutes la aplicación:
+
+- descargará modelos IA automáticamente
+- puede tardar varios minutos
+- se recomienda ejecutar como administrador
+
+---
+
+# 📂 Cómo usarlo
+
+## 1. Localizar XML de LaunchBox
+
+Normalmente están en:
+
+```text
+LaunchBox\Data\Platforms
+```
+
+Ejemplos:
+
+```text
+Nintendo Entertainment System.xml
+Super Nintendo Entertainment System.xml
+Sega Genesis.xml
+```
+
+---
+
+## 2. HACER BACKUP
+
+⚠️ MUY IMPORTANTE
+
+Haz una copia de seguridad de tus XML originales antes de reemplazarlos.
+
+---
+
+## 3. Copiar XML a INPUT
+
+Copia los XML a:
+
+```text
+input
+```
+
+---
+
+## 4. Ejecutar la aplicación
+
+Abrir:
+
+```text
 TraductorData_LaunchBox.exe
+```
 
-👉 Ejecutar como administrador
+Recomendado:
+
+✅ Ejecutar como administrador
 
 ---
 
-# ⚙️ 5. CONFIGURAR CARPETAS INPUT Y OUTPUT
+# 🖥️ Interfaz
 
-*********************************** NOTA IMPORTANTE*******************************
+<p align="center">
+  <img src="screenshots/translation_process.png" width="900">
+</p>
 
-Se recomienda usar las carpetas Input y Output que se generan automáticamente en la misma ruta de la aplicación, deja estos campos como aparecen por default.
+<!--
+SCREENSHOT REQUERIDO:
+translation_process.png
 
-**********************************************************************************
+Mostrar:
+- Traducción en proceso
+- Barra avanzando
+- Consola mostrando actividad
+- Estadísticas CPU/RAM
+-->
 
+---
 
-# 🚀 6. ELEGIR PERFIL
+## 5. Elegir perfil
 
-La aplicación incluye perfiles:
+Disponibles:
 
-* LOW
-* BALANCED
-* HIGH
+- LOW
+- BALANCED
+- HIGH
 
 Recomendación general:
 
@@ -164,81 +219,103 @@ Recomendación general:
 
 ---
 
-# 🧠 7. INICIAR TRADUCCIÓN
+## 6. Iniciar traducción
 
-Presiona:
+Presionar:
 
+```text
 INICIAR TRADUCCIÓN
+```
 
 La aplicación:
 
-* analizará los XML
-* detectará idioma
-* traducirá únicamente texto necesario
-* conservará estructura XML
-* guardará resultados automáticamente
+- analiza XML
+- detecta idioma
+- traduce únicamente contenido necesario
+- mantiene estructura original
+- guarda automáticamente resultados
 
 ---
 
-# 📂 8. TOMAR LOS XML TRADUCIDOS
+## 7. Tomar XML traducidos
 
-Cuando termine:
+Los resultados aparecerán en:
 
-Los archivos traducidos aparecerán en:
-
-\output
-
-
----
-
-# 🔄 9. REEMPLAZAR EN LAUNCHBOX
-
-Ahora simplemente:
-
-1. Copia los XML traducidos
-2. Pégalos nuevamente en:
-
-```
-\LaunchBox\Data\Platforms
-y
-\LaunchBox\Data\Platforms.XML
+```text
+output
 ```
 
-3. Reemplaza los originales
+---
+
+## 8. Reemplazar en LaunchBox
+
+Copiar nuevamente los XML traducidos a:
+
+```text
+LaunchBox\Data\Platforms
+```
+
+y reemplazar los originales.
 
 ---
 
-# 🎉 LISTO
+# 💾 Todo funciona OFFLINE
 
-Ahora LaunchBox mostrará las Notes traducidas al español.
-
----
-
-# 📌 IMPORTANTE
-
-La herramienta:
-
-✅ SOLO traduce `<Notes>`  
-❌ NO modifica nombres de juegos  
-❌ NO altera imágenes  
-❌ NO cambia rutas  
-❌ NO rompe compatibilidad con LaunchBox  
-
----
-
-# 💾 TODO ES OFFLINE
+Una vez descargados los modelos:
 
 ✅ No necesita internet  
-✅ No consume APIs  
-✅ No tiene límites  
+✅ No usa APIs  
 ✅ No manda datos a servidores  
+✅ No tiene límites  
+
+---
+
+# 📁 Estructura del proyecto
+
+```text
+TraductorData_LaunchBox/
+│
+├── input/
+├── output/
+├── cache/
+├── logs/
+├── models/
+│
+├── main.py
+├── settings.json
+├── gamer_dictionary.json
+└── build_portable.bat
+```
+
+---
+
+# 📦 requirements.txt
+
+```txt
+transformers>=4.40.0
+torch>=2.0.0
+sentencepiece>=0.2.0
+ctranslate2>=4.0.0
+lxml>=5.0.0
+langdetect>=1.0.9
+psutil>=5.9.0
+huggingface-hub>=0.20.0
+protobuf>=4.25.0
+sacremoses>=0.1.1
+```
 
 ---
 
 # ❤️ Proyecto hecho por necesidad real
 
-Hice esta herramienta porque literalmente no encontré nada que resolviera este problema de forma seria y automatizada para LaunchBox.
+Desarrollé esta herramienta porque literalmente no encontré nada que resolviera este problema de forma seria y automatizada para LaunchBox.
 
 Espero que le sirva a más gente de la comunidad tanto como me sirvió a mí.
 
 Si alguien la prueba, agradecería muchísimo feedback 🙌
+
+---
+
+# 📜 Licencia
+
+MIT License
