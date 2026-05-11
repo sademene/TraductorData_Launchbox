@@ -5,17 +5,7 @@
   <img src="screenshots/main_ui.png" width="900">
 </p>
 
-<!--
-SCREENSHOT REQUERIDO:
-main_ui.png
 
-Captura principal de la aplicación mostrando:
-- Barra de progreso
-- Consola
-- Estadísticas CPU/RAM
-- Botones
-- Perfil seleccionado
--->
 
 ---
 
@@ -78,15 +68,7 @@ de los XML de LaunchBox utilizando IA local.
   <img src="screenshots/xml_before.png" width="900">
 </p>
 
-<!--
-SCREENSHOT REQUERIDO:
-xml_before.png
 
-Mostrar:
-- XML original en inglés
-- Nodo <Notes>
-- Metadata real de LaunchBox
--->
 
 ---
 
@@ -96,15 +78,7 @@ Mostrar:
   <img src="screenshots/xml_after.png" width="900">
 </p>
 
-<!--
-SCREENSHOT REQUERIDO:
-xml_after.png
 
-Mostrar:
-- El mismo XML ya traducido
-- Nodo <Notes> en español
-- Comparativa clara
--->
 
 ---
 
@@ -119,7 +93,7 @@ Ir a:
 y descargar:
 
 ```text
-TraductorData_LaunchBox_v0.16_Portable.zip
+TraductorData_Launchbox_v1.00.zip
 ```
 
 ---
@@ -192,16 +166,7 @@ Recomendado:
   <img src="screenshots/translation_process.png" width="900">
 </p>
 
-<!--
-SCREENSHOT REQUERIDO:
-translation_process.png
 
-Mostrar:
-- Traducción en proceso
-- Barra avanzando
-- Consola mostrando actividad
-- Estadísticas CPU/RAM
--->
 
 ---
 
