@@ -200,6 +200,9 @@ La aplicación:
 - mantiene estructura original
 - guarda automáticamente resultados
 
+Durante el proceso de traducción puedes presionar el botón Abortar para detener el proceso actual.  
+La próxima vez que inicies se mantendrá el avance de la traducción desde cache.  
+
 ---
 
 ## 7. Tomar XML traducidos
